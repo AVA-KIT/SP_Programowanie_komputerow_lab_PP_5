@@ -2,15 +2,12 @@
 sl = [x for x in input('Wprowadź sekwęcję liczb binarnych oddzielonych przecinkami: ').split(',')]
 sl2 = []
 for x in sl:
-    if int(x,2) % 5 == 0:
+    if int(x,2) % 5 == 0: #Zamiana z systemu binarnego (zapisanego jako string np. "11101") na dziesiętny
         sl2.append(x)
-
+sl3 =[]
 for i in sl2:
-    print(int(i,2), end=",") #Zamiana z systemu binarnego (zapisanego jako string np. "11101") na dziesiętny
+    sl3.append(str(int(i,2))) 
 print()
-for i in sl2:
-    print(i, end=",")
-    
-
-
-
+print(','.join(sl3))
+print(','.join(sl2))
+print()
