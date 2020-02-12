@@ -4,7 +4,13 @@ sl2 = []
 for x in sl:
     if int(x,2) % 5 == 0:
         sl2.append(x)
-print(sl2)
+
+for i in sl2:
+    print(int(i,2), end=",")
+print()
+for i in sl2:
+    print(i, end=",")
+    
 
 
 
