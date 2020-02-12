@@ -6,7 +6,7 @@ for x in sl:
         sl2.append(x)
 
 for i in sl2:
-    print(int(i,2), end=",")
+    print(int(i,2), end=",") #Zamiana z systemu binarnego (zapisanego jako string np. "11101") na dziesiętny
 print()
 for i in sl2:
     print(i, end=",")
