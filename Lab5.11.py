@@ -1,6 +1,10 @@
 import calendar
 def DniWMiesiacu(r,m):
-        print(calendar.monthrange(r,m)[1])
+        try:
+                print(calendar.monthrange(r,m)[1])
+        except:
+                print('Argunenty są nieprawidłowe')
+                return None
 
 r = int(input('Podaj rok: '))
 m = int(input('Podaj miesiąc: '))
