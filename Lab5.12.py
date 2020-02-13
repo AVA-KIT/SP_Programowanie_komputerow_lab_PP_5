@@ -13,7 +13,7 @@ def dzienWRoku(r,m,d):
         print(dzien)
     
     except:
-         print('Argunent są nieprawidłowe')
+         print('Argunenty są nieprawidłowe')
          return None
        
 
