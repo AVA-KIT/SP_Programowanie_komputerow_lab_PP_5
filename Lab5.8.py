@@ -1,6 +1,6 @@
 y = int(input('Podaj rok: '))
 
-while y >= 3000 or y <= 1600:
+while y >= 9999 or y <= 1:
     y = int(input('Podaj właściwy format roku: '))
 
 m = int(input('Podaj miesiąc: '))
@@ -29,6 +29,14 @@ noDay += (y/400)
 
 noDay = noDay % 7
 
-dniTyg = {0: 'Niedziela',1:'Poniedziałek',2:'Wtorek',3:'Środa',4:'Czwartek',5:'Piątek',6:'Sobota'}
+dniTyg = {
+    0: 'Niedziela',
+    1:'Poniedziałek',
+    2:'Wtorek',
+    3:'Środa',
+    4:'Czwartek',
+    5:'Piątek',
+    6:'Sobota'
+    }
 
 print(dniTyg[int(noDay)])
